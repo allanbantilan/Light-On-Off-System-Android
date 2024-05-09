@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".dasboard_activity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="32dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#FFFFFF"
+        tools:layout_editor_absoluteY="32dp">
+
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="407dp"
+            android:layout_height="270dp"
+            android:layout_marginTop="104dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/clothingCard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="264dp">
+
+                <RelativeLayout
+                    android:id="@+id/building1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    tools:layout_editor_absoluteX="20dp"
+                    tools:layout_editor_absoluteY="264dp">
+
+
+                    <TimePicker
+                        android:id="@+id/timePickerOn"
+                        android:layout_width="241dp"
+                        android:layout_height="134dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="70dp"
+                        android:layout_marginBottom="0dp"
+                        android:numbersBackgroundColor="@color/black"
+                        android:numbersSelectorColor="@color/black"
+                        android:numbersTextColor="@color/black"
+                        android:numbersInnerTextColor="@color/black"
+                        android:timePickerMode="spinner" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="244dp"
+                        android:layout_marginBottom="199dp"
+                        android:text="Schedule On"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/selectDateOnButton"
+                        android:layout_width="196dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="82dp"
+                        android:layout_marginBottom="144dp"
+                        android:text="Select Date"
+                        android:backgroundTint="@color/teal_200"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/row"
+            android:layout_width="416dp"
+            android:layout_height="351dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="443dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    tools:layout_editor_absoluteX="20dp"
+                    tools:layout_editor_absoluteY="443dp">
+
+                    <Button
+                        android:id="@+id/selectDateOffButton"
+                        android:layout_width="196dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="78dp"
+                        android:layout_marginBottom="217dp"
+                        android:backgroundTint="@color/teal_200"
+                        android:text="Select Date"
+                        android:textColor="@color/white" />
+
+                    <TimePicker
+                        android:id="@+id/timePickerOff"
+                        android:layout_width="241dp"
+                        android:layout_height="134dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="63dp"
+                        android:layout_marginBottom="68dp"
+                        android:timePickerMode="spinner"
+                        android:numbersBackgroundColor="@color/black"
+                        android:numbersSelectorColor="@color/black"
+                        android:numbersTextColor="@color/black"
+                        android:numbersInnerTextColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="237dp"
+                        android:layout_marginBottom="266dp"
+                        android:text="Schedule Off"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/addScheduleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:backgroundTint="@color/teal_200"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="118dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Add Schedule" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="429dp"
+            android:layout_height="62dp"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/teal_200"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.001"
+            app:title="Add Schedule"
+            app:titleTextColor="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

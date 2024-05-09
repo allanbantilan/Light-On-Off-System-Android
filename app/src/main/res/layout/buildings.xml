@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".building_activity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="32dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#FFFFFF"
+        tools:layout_editor_absoluteY="32dp">
+
+
+        <ImageView
+            android:id="@+id/amazonImage"
+            android:layout_width="154dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/rounded_image_bg"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wewe2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/amazonImage">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/clothingCard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="264dp">
+
+                <RelativeLayout
+                    android:id="@+id/toFloor1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    tools:layout_editor_absoluteX="20dp"
+                    tools:layout_editor_absoluteY="264dp">
+
+                    <TextView
+                        android:id="@+id/clothingName"
+                        android:layout_width="114dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/clothingImage"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Building 1"
+                        android:textColor="@color/lavender"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="71dp"
+                        tools:layout_editor_absoluteY="334dp" />
+
+                    <ImageView
+                        android:id="@+id/clothingImage"
+                        android:layout_width="73dp"
+                        android:layout_height="84dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="51dp"
+                        android:src="@drawable/building"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="264dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                tools:layout_editor_absoluteX="216dp"
+                tools:layout_editor_absoluteY="264dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="216dp"
+                    tools:layout_editor_absoluteY="264dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/clothingImage4"
+                        android:layout_width="73dp"
+                        android:layout_height="84dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="51dp"
+                        android:src="@drawable/building"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="264dp" />
+
+                    <TextView
+                        android:id="@+id/clothingName3"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/clothingImage4"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="51dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="26dp"
+                        android:text="Building 2"
+                        android:textColor="@color/lavender"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="71dp"
+                        tools:layout_editor_absoluteY="334dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="443dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="20dp"
+                    tools:layout_editor_absoluteY="443dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/clothingImage5"
+                        android:layout_width="73dp"
+                        android:layout_height="84dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="51dp"
+                        android:src="@drawable/building"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="264dp" />
+
+                    <TextView
+                        android:id="@+id/clothingName4"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/clothingImage5"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="22dp"
+                        android:text="Building 3"
+                        android:textColor="@color/lavender"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="71dp"
+                        tools:layout_editor_absoluteY="334dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                tools:layout_editor_absoluteX="216dp"
+                tools:layout_editor_absoluteY="443dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="216dp"
+                    tools:layout_editor_absoluteY="443dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/clothingImage6"
+                        android:layout_width="73dp"
+                        android:layout_height="84dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="51dp"
+                        android:src="@drawable/building"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="264dp" />
+
+                    <TextView
+                        android:id="@+id/clothingName5"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/clothingImage6"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="56dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Building 4"
+                        android:textColor="@color/lavender"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="71dp"
+                        tools:layout_editor_absoluteY="334dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/row3"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="175dp"-->
+        <!--            android:layout_marginTop="4dp"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:padding="10dp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/row2">-->
+
+        <!--            <androidx.cardview.widget.CardView-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_margin="10dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                app:cardCornerRadius="20dp"-->
+        <!--                app:cardElevation="20dp"-->
+        <!--                tools:layout_editor_absoluteX="20dp"-->
+        <!--                tools:layout_editor_absoluteY="634dp">-->
+
+        <!--                <RelativeLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    tools:layout_editor_absoluteX="20dp"-->
+        <!--                    tools:layout_editor_absoluteY="634dp">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/pharmName"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_below="@+id/pharmImage"-->
+        <!--                        android:layout_centerHorizontal="true"-->
+        <!--                        android:text="Pharmacy"-->
+        <!--                        android:textColor="@color/lavender"-->
+        <!--                        android:textSize="20sp"-->
+        <!--                        tools:layout_editor_absoluteX="63dp"-->
+        <!--                        tools:layout_editor_absoluteY="704dp" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/pharmImage"-->
+        <!--                        android:layout_width="70dp"-->
+        <!--                        android:layout_height="70dp"-->
+        <!--                        android:layout_centerHorizontal="true"-->
+        <!--                        android:src="@drawable/pharmacy"-->
+        <!--                        tools:layout_editor_absoluteX="73dp"-->
+        <!--                        tools:layout_editor_absoluteY="634dp" />-->
+        <!--                </RelativeLayout>-->
+        <!--            </androidx.cardview.widget.CardView>-->
+
+        <!--            <androidx.cardview.widget.CardView-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_margin="10dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                app:cardCornerRadius="20dp"-->
+        <!--                app:cardElevation="20dp"-->
+        <!--                tools:layout_editor_absoluteX="216dp"-->
+        <!--                tools:layout_editor_absoluteY="634dp">-->
+
+        <!--                <RelativeLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    tools:layout_editor_absoluteX="216dp"-->
+        <!--                    tools:layout_editor_absoluteY="634dp">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/grocName"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_below="@+id/grocImage"-->
+        <!--                        android:layout_centerHorizontal="true"-->
+        <!--                        android:text="Groceries"-->
+        <!--                        android:textColor="@color/lavender"-->
+        <!--                        android:textSize="20sp"-->
+        <!--                        tools:layout_editor_absoluteX="261dp"-->
+        <!--                        tools:layout_editor_absoluteY="704dp" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/grocImage"-->
+        <!--                        android:layout_width="70dp"-->
+        <!--                        android:layout_height="70dp"-->
+        <!--                        android:layout_centerHorizontal="true"-->
+        <!--                        android:src="@drawable/groceries"-->
+        <!--                        tools:layout_editor_absoluteX="269dp"-->
+        <!--                        tools:layout_editor_absoluteY="634dp" />-->
+        <!--                </RelativeLayout>-->
+        <!--            </androidx.cardview.widget.CardView>-->
+        <!--        </LinearLayout>-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="429dp"
+            android:layout_height="62dp"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/teal_200"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.001"
+            app:title="Buildings"
+            app:titleTextColor="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

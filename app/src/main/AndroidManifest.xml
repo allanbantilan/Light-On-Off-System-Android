@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Add the following line directly inside the <manifest> element -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/wewe2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/round1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PowerSystem"
+        tools:targetApi="31">
+
+
+
+        <activity
+            android:name=".login_activity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--        <activity-->
+<!--            android:name=".dashboard">-->
+
+<!--        </activity>-->
+        <activity android:name=".sched_list_activity">
+        </activity>
+        <activity android:name=".admin_add_user">
+        </activity>
+        <activity android:name=".adminAuth">
+        </activity>
+        <activity
+            android:name=".MainActivity">
+        </activity>
+        <activity
+            android:name=".dasboard_activity">
+        </activity>
+        <activity
+            android:name=".building_activity">
+        </activity>
+        <activity
+            android:name=".buildings">
+        </activity>
+        <activity
+            android:name=".profile_activity">
+        </activity>
+        <activity
+            android:name=".inside_settings">
+        </activity>
+        <activity
+            android:name=".schedule_activity">
+        </activity>
+        <activity
+            android:name=".set_schedule">
+        </activity>
+        <activity
+            android:name=".floor_activity">
+        </activity>
+        <activity android:name=".edit_activity">
+        </activity>
+        <activity android:name=".edit_activity2">
+        </activity>
+
+    <activity android:name=".admin_login">
+    </activity>
+        <activity android:name=".admin_dasboard_activity">
+        </activity>
+
+    <activity android:name=".admin_sched_list_activity">
+    </activity>
+        <activity android:name=".user_sched_list3">
+        </activity>
+
+    </application>
+
+
+</manifest>

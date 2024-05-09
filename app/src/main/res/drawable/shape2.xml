@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="30dp"> <!-- Set the bottom padding to the desired radius (30dp) -->
+        <shape>
+            <solid android:color="@color/teal_200" />
+            <corners android:topLeftRadius="0dp" android:topRightRadius="0dp" android:bottomLeftRadius="30dp" android:bottomRightRadius="30dp" />
+        </shape>
+    </item>
+</layer-list>
